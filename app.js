@@ -15,10 +15,10 @@ app.post('/chat/messages', multer.single('message'), function (req, res) {
     'Access-Control-Allow-Credentials': true,
   })
   try{
-    console.log(req.body)
-    let result = bot.processRequest(req.body)
-    console.log(result)
-    res.send(JSON.stringify(result))
+    bot.processRequest(req.body, result=>{
+      let respObj = {'messages': result}
+      res.send(JSON.stringify(respObj))
+    })
   } catch (error){
     console.error(error)
   }
