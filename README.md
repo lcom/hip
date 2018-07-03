@@ -20,4 +20,4 @@ Then run the server.
 node app
 ```
 
-Lastly, navigate to (http://hipmunk.github.io/hipproblems/lessenger/)[http://hipmunk.github.io/hipproblems/lessenger/] and you can begin using the chatbot.
+Lastly, navigate to the http://hipmunk.github.io/hipproblems/lessenger/ and you can begin using the chatbot.
